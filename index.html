@@ -146,10 +146,16 @@
         </div>
     </footer>
 
+    <section class="modal modal-search">
+      <form class="modal-user-search" action="https://echo.htmlacademy.ru" method="get">
+        <input name="user-search" type="text" value="" placeholder="Что ищем?">
+      </form>
+    </section>
+
     <section class="modal modal-login">
     	<form class="modal-user-login" action="https://echo.htmlacademy.ru" method="post">
-  			<input type="text" name="email" value="" placeholder="Электронная почта">
-  			<input type="password" name="user-password" value="" placeholder="Пароль">
+  			<input name="user-email" type="text" value="" placeholder="Электронная почта">
+  			<input name="user-password" type="password" value="" placeholder="Пароль">
   			<input class="btn" type="submit" value="Войти">
   			<a class="forget-password" href="#">Забыли пароль?</a>
   			<a class="new-registration" href="#">Новая регистрация</a>
@@ -178,6 +184,19 @@
 			<input class="btn user-order" type="submit" value="Оформить заказ">
 		</form>
 	</section>
+
+  <section class="modal modal-catalog-icecream">
+    <form class="modal-icecream-type">
+      <select name="icecream-type">
+        <option value="new-items"><b>Новинки</b></option>
+        <hr>
+        <option value="creamy-items">Сливочное</option>
+        <option value="sherbet">Щербеты</option>
+        <option value="fruit-ice">Фруктовы лед</option>
+        <option value="melorin">Мелорин</option>
+      </select>
+    </form>
+  </section>
 
 
   </body>
