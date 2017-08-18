@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Глейси</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header_nav">
+                <a class="menu_site_logo">
+                  <img src="img/menu_logo.svg" width="154" height="64" alt="Логотип Глейси">
+                </a>
+                <ul class="menu_site_list">
+                  <li class="menu_site_item"><a href="#">Каталог</a></li>
+                  <li class="menu_site_item"><a href="#">Доставка и оплата</a></li>
+                  <li class="menu_site_item"><a href="#">О Компании</a></li>
+                </ul>
+                <ul class="menu_user_list">
+                  <li class="menu_user_item"><a href="#">Поиск</a></li>
+                  <li class="menu_user_item"><a href="#">Вход</a></li>
+                  <li class="menu_user_item"><a href="#">Пусто</a></li>
+                </ul>
+            </nav>
+            <p><span>С 10 до 20, ежедневно</span> <a class="phone"> 8 812 450 25-25</a></p>
+        </header>
+
+      	<main class="container">
+
+            <ul class="breadcbs">
+                <li class="breadcbs_item"><a href="index.html">Главная</a></li>
+                <li class="breadcbs_item"><a href="catalog-item.html">Каталог</a></li>
+                <li class="breadcbs_item_current">Сливочное</li>
+            </ul>
+
+      		<h1>Сливочное мороженое</h1>
+
+      		<section class="filter">
+                <h2 class="visually_hidden">Расширенный фильтр заказа</h2>
+
+      			<form class="filter_list" action="http//echo.htmlacademy.ru" method="get">
+      				<fieldset class="filter_item">
+      					<legend>Сортировка:<br></legend>
+      					<select name="sorting">
+      						<option value="popular">по популярности</option>
+      						<option value="cost">по цене</option>
+      						<option value="volume">по объему</option>
+      					</select>
+      				</fieldset>
+
+      				<fieldset class="filter_item">
+    					<legend>Цена: 100 руб. - 500 руб.<br></legend>
+    					<input name="cost" type="range" min="0" max="800" value="300">
+    				</fieldset>
+
+    				<fieldset class="filter_item">
+    					<legend>Жирность:<br></legend>
+    					<label><input name="fat" type="radio" value="0"> 0%</label>
+						<label><input name="fat" type="radio" value="10" checked> 10%</label>
+  						<label><input name="fat" type="radio" value="30"> 30%</label>
+    					<label><input name="fat" type="radio" value="more than 30"> выше 30%</label>
+    				</fieldset>
+
+    				<fieldset class="filter_item">
+    					<legend>Наполнители:<br></legend>
+    					<input name="filler_choco" type="checkbox" checked> шоколадные
+    					<input name="filler_sugar" type="checkbox" checked> сахарные присыпки
+    					<input name="filler_fruits" type="checkbox"> фрукты
+    					<input name="filler_syrup" type="checkbox"> сиропы
+    					<input name="filler_jam" type="checkbox"> джемы
+    				</fieldset>
+
+    				<fieldset class="filter_item">
+    					<input name="filter_btn" type="submit" value="Применить">
+    				</fieldset>
+    			</form>
+    		</section>
+
+    		<section class="catalog">
+    			<ul class="catalog_list">
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_orange" width="267" height="267" alt="Фото мороженого">
+      					<p>310 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_coffee" width="267" height="267" alt="Фото мороженого">
+      					<p>380 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочно-кофейное с кусочками<br> шоколада</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_strawberry" width="267" height="267" alt="Фото мороженого">
+      					<p>355 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочно-клубничное с<br> присыпкой из белого шоколада</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_caramel" width="267" height="267" alt="Фото мороженого">
+      					<p>415 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное крем-брюле с<br> карамельной подливкой</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_cranberries" width="267" height="267" alt="Фото мороженого">
+      					<p>310 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное с брусничным<br> джемом</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_blueberries" width="267" height="267" alt="Фото мороженого">
+      					<p>380 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочно-черничное с цельными<br> ягодами черники</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_lemon" width="267" height="267" alt="Фото мороженого">
+      					<p>355 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочно-лимонное с<br> карамельной присыпкой</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_choco1" width="267" height="267" alt="Фото мороженого">
+      					<p>415 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное с шоколадной с<br> стружкой</a>
+      				</li>
+              <li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_vanilla" width="267" height="267" alt="Фото мороженого">
+      					<p>310 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное ванильное с<br> кусочками шоколада</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_mentol" width="267" height="267" alt="Фото мороженого">
+      					<p>380 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное с ментоловым<br> сиропом</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_choco2" width="267" height="267" alt="Фото мороженого">
+      					<p>355 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное с кусочками черного<br> шоколада</a>
+      				</li>
+      				<li class="catalog_item">
+      					<img class="catalog_img" src="img/icecream_mint" width="267" height="267" alt="Фото мороженого">
+      					<p>415 Р/кг</p>
+      					<a class="catalog_link" href="#">Сливочное с мятным сиропом</a>
+      				</li>
+      			</ul>
+      		</section>
+
+            <div class="pagination">
+                <ul class="pagination_list">
+                    <li class="pagination-item"><input class="pagination_btn" name="pagination_btn_left" type="submit" value="&lt;"></li>
+                    <li class="pagination-item"><a class="pagination_link" href="#">1</a></li>
+                    <li class="pagination-item"><a class="pagination_link" href="#">2</a></li>
+                    <li class="pagination-item"><a class="pagination_link" href="#">3</a></li>
+                    <li class="pagination-item"><a class="pagination_link" href="#">4</a></li>
+                    <li class="pagination-item"><a class="pagination_link" href="#">5</a></li>
+                    <li class="pagination-item"><input class="pagination_btn" name="pagination_btn_right" type="submit" value="&rt;"></li>
+                </ul>
+            </div>
+    	</main>
+      	
+      <footer class="footer">
+  			<ul class="socseti_menu">
+  				<li class="socseti_item"><a href="#">Твиттер</a></li>
+  				<li class="socseti_item"><a href="#">Инстаграм</a></li>
+  				<li class="socseti_item"><a href="#">Фейсбук</a></li>
+  				<li class="socseti_item"><a href="#">Вконтакте</a></li>
+  			</ul>
+  			<ul class="documents_menu">
+  				<li class="documents_item"><a href="#">Для поставщиков</a></li>
+  				<li class="documents_item"><a href="#">О производстве</a></li>
+  				<li class="documents_item"><a href="#">Наши документы</a></li>
+  				<li class="documents_item"><a href="#">Экологические стандарты</a></li>
+  			</ul>
+  			<div class="copyright">
+  				<img class="copyright_htmlacademy" src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип htmlacademy">
+  				<p>Сделано в <a class="copyright_htmlacademy_link" href="#">HTML Academy</a> &copy; 2017</p>
+  			</div>
+  		</footer>
+  </body>
+</html>
