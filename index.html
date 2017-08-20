@@ -12,7 +12,16 @@
 					<img src="img/menu_logo.svg" width="154" height="64" alt="Логотип Глейси">
 				</a>
 				<ul class="menu_site_list">
-					<li class="menu_site_item"><a href="#">Каталог</a></li>
+					<li class="menu_site_item"><a href="#">Каталог</a>
+						<ul class="menu_catalog_list">
+							<li class="menu_catalog_item_current"><b>Новинки</b></li>
+							<hr>
+							<li class="menu_catalog_item">Сливочное</li>
+							<li class="menu_catalog_item">Щербеты</li>
+							<li class="menu_catalog_item">Фруктовый лед</li>
+							<li class="menu_catalog_item">Мелорин</li>
+						</ul>
+					</li>
 					<li class="menu_site_item"><a href="#">Доставка и оплата</a></li>
 					<li class="menu_site_item"><a href="#">О Компании</a></li>
 				</ul>
@@ -27,11 +36,9 @@
 
 		<main class="container">
 
-			<h1 class="visually_hidden">Магазин мороженого Глайси</h1>
-
-			<h2 class="visually_hidden">Промо магазина мороженого Глайси</h2>
-
 			<section class="promo">
+				<h2 class="visually_hidden">Промо магазина мороженого Глайси</h2>
+
 				<ul class="promo_list">
 					<li class="promo_icecream">
 						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -76,25 +83,25 @@
 				<ul class="popular_list">
 					<li class="popular_item">
 						<img class="popular_icecream" src="img/icecream_orange" width="267" height="267" alt="Фото мороженого">
-						<img class="popular_hit" src="img/popular_hit" width="61" height="61" alt="Хит">
+						<span class="popular_hit">Хит</span>
 						<p>310 Р/кг</p>
 						<a class="popular_ice" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 					</li>
 					<li class="popular_item">
 						<img class="popular_icecream" src="img/icecream_coffee" width="267" height="267" alt="Фото мороженого">
-						<img class="popular_hit" src="img/popular_hit" width="61" height="61" alt="Хит">
+						<span class="popular_hit">Хит</span>
 						<p>380 Р/кг</p>
 						<a class="popular_ice" href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</li>
 					<li class="popular_item">
 						<img class="popular_icecream" src="img/icecream_strawberry" width="267" height="267" alt="Фото мороженого">
-						<img class="popular_hit" src="img/popular_hit" width="61" height="61" alt="Хит">
+						<span class="popular_hit">Хит</span>
 						<p>355 Р/кг</p>
 						<a class="popular_ice" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					</li>
 					<li class="popular_item">
 						<img class="popular_icecream"" src="img/icecream_caramel" width="267" height="267" alt="Фото мороженого">
-						<img class="popular_hit" src="img/popular_hit" width="61" height="61" alt="Хит">
+						<span class="popular_hit">Хит</span>
 						<p>415 Р/кг</p>
 						<a class="popular_ice" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					</li>
@@ -147,11 +154,11 @@
 		</main>
 
 		<footer class="footer">
-			<ul class="socseti_menu">
-				<li class="socseti_item"><a href="#">Твиттер</a></li>
-				<li class="socseti_item"><a href="#">Инстаграм</a></li>
-				<li class="socseti_item"><a href="#">Фейсбук</a></li>
-				<li class="socseti_item"><a href="#">Вконтакте</a></li>
+			<ul class="social_menu">
+				<li class="social_item"><a href="#">Твиттер</a></li>
+				<li class="social_item"><a href="#">Инстаграм</a></li>
+				<li class="social_item"><a href="#">Фейсбук</a></li>
+				<li class="social_item"><a href="#">Вконтакте</a></li>
 			</ul>
 			<ul class="documents_menu">
 				<li class="documents_item"><a href="#">Для поставщиков</a></li>
@@ -183,22 +190,22 @@
 		</section>
 
 		<section class="modal modal_basket">
-			<ul class="modal_basket_catalog">
-				<li class="modal_basket_item"><span class="modal_basket_lineclose">x</span></li>
-				<li class="modal_basket_item"><img class="modal_basket_icecream" src="img/icecream_orange" width="33" height="33" alt="Фото мороженого"></li>
-				<li class="modal_basket_item"><p>Пломбир с апельсиновым джемом</p></li>
-				<li class="modal_basket_item"><p>1,5 кг &times; 200 руб.</p></li>
-				<li class="modal_basket_item"><p>350 руб.</p></li>
-			</ul>
-			<ul class="modal_basket_catalog">
-				<li class="modal_basket_item"><span class="modal_basket_lineclose">x</span></li>
-				<li class="modal_basket_item"><img class="modal_basket_icecream" src="img/icecream_strawberry" width="33" height="33" alt="Фото мороженого"></li>
-				<li class="modal_basket_item"><p>Клубничный пломбир с присыпкой<br> из белого шоколада</p></li>
-				<li class="modal_basket_item"><p>1,5 кг &times; 300 руб.</p></li>
-				<li class="modal_basket_item"><p>450 руб.</p></li>
-			</ul>
+			<div class="modal_basket_list">
+				<span class="modal_basket_line_close">x</span>
+				<img class="modal_basket_icecream" src="img/icecream_orange" width="33" height="33" alt="Фото мороженого">
+				<p class="modal_basket_item">Пломбир с апельсиновым джемом</p>
+				<p class="modal_basket_netto_price">1,5 кг &times; 200 руб.</p>
+				<p class="modal_basket_item_price">350 руб.</p>
+			</div>
+			<div class="modal_basket_list">
+				<span class="modal_basket_line_close">x</span>
+				<img class="modal_basket_icecream" src="img/icecream_orange" width="33" height="33" alt="Фото мороженого">
+				<p class="modal_basket_item">Клубничный пломбир с присыпкой из белого шоколада</p>
+				<p class="modal_basket_netto_price">1,5 кг &times; 300 руб.</p>
+				<p class="modal_basket_item_price">450 руб.</p>
+			</div>
 			<hr>
-			<p><b>Итого: 750 руб.</b></p>
+			<b class="modal_basket_final_price">Итого: 750 руб.</b>
 			<form class="modal_basket_order">
 				<input class="btn modal_basket_btn" type="submit" value="Оформить заказ">
 			</form>
