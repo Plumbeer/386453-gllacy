@@ -15,7 +15,7 @@
 					<li class="menu_site_item"><a href="#">Каталог</a>
 						<ul class="menu_catalog_list">
 							<li class="menu_catalog_item_current"><b>Новинки</b></li>
-							<hr>
+							<li><hr></li>
 							<li class="menu_catalog_item">Сливочное</li>
 							<li class="menu_catalog_item">Щербеты</li>
 							<li class="menu_catalog_item">Фруктовый лед</li>
@@ -35,10 +35,10 @@
 		</header>
 
 		<main class="container">
+			<h1 class="visually_hidden">Магазин мороженого Глайси</h1>
 
 			<section class="promo">
-				<h2 class="visually_hidden">Промо магазина мороженого Глайси</h2>
-
+				<h2 class="visually_hidden">Промо магазина Глайси</h2>
 				<ul class="promo_list">
 					<li class="promo_icecream">
 						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -67,6 +67,7 @@
 			</section>
 	  				
 			<section class="bonus">
+				<h2 class="visually_hidden">Бонусы магазина Глайси</h2>
 				<article class="bonus_info">
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -80,6 +81,7 @@
 			</section>
 
 			<section class="popular">
+				<h2 class="visually_hidden">Популярное магазина Глайси</h2>
 				<ul class="popular_list">
 					<li class="popular_item">
 						<img class="popular_icecream" src="img/icecream_orange" width="267" height="267" alt="Фото мороженого">
@@ -109,6 +111,7 @@
 			</section>
 
 			<section class="features">
+				<h2 class="visually_hidden">Преимущества магазина Глайси</h2>
 				<ul class="features_list">
 					<li class="features_item">
 						<p>Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
@@ -129,11 +132,13 @@
 			</section>
 
 			<article class="last_news">
+				<h2 class="visually_hidden">Новости магазина Глайси</h2>
 				<h3>Новое в нашем блоге</h3>
 				<a class="news_link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
 			</article>
 
 			<section class="subscribe">
+				<h2 class="visually_hidden">Подписка магазина Глайси</h2>
 			 	<p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно:)</p>
 				<form class="subscribe_email" action="https://echo.htmlacademy.ru" method="post">
 			  		<input type="text" name="email" value="" placeholder="Электронная почта">
@@ -142,6 +147,7 @@
 			</section>
 
 			<section class="contacts">
+				<h2 class="visually_hidden">Контакты магазина Глайси</h2>
 				<div class="map">
 					<img class="map_logo" src="img/icecream_logo.svg" width="80" height="140" alt="Логотип геолокации">
 				</div>
@@ -195,17 +201,17 @@
 				<img class="modal_basket_icecream" src="img/icecream_orange" width="33" height="33" alt="Фото мороженого">
 				<p class="modal_basket_item">Пломбир с апельсиновым джемом</p>
 				<p class="modal_basket_netto_price">1,5 кг &times; 200 руб.</p>
-				<p class="modal_basket_item_price">350 руб.</p>
+				<p class="modal_basket_item_cost">350 руб.</p>
 			</div>
 			<div class="modal_basket_list">
 				<span class="modal_basket_line_close">x</span>
 				<img class="modal_basket_icecream" src="img/icecream_orange" width="33" height="33" alt="Фото мороженого">
 				<p class="modal_basket_item">Клубничный пломбир с присыпкой из белого шоколада</p>
 				<p class="modal_basket_netto_price">1,5 кг &times; 300 руб.</p>
-				<p class="modal_basket_item_price">450 руб.</p>
+				<p class="modal_basket_item_cost">450 руб.</p>
 			</div>
 			<hr>
-			<b class="modal_basket_final_price">Итого: 750 руб.</b>
+			<b class="modal_basket_amount">Итого: 750 руб.</b>
 			<form class="modal_basket_order">
 				<input class="btn modal_basket_btn" type="submit" value="Оформить заказ">
 			</form>
@@ -231,7 +237,7 @@
 					<span class="modal_feedback_close">x</span>
 					<input name="modal_feedback_username" type="text" value="" placeholder="Как вас зовут?">
 					<input name="modal_feedback_useremail" type="text" value="" placeholder="Ваша почта для ответа?">
-					<input name="modal_feedback_usercomment" type="textarea" row="6" value="" placeholder="Напишите что-нибудь...">
+					<textarea name="modal_feedback_usercomment" rows="7" cols="30" value="" placeholder="Напишите что-нибудь..."></textarea>
 					<input class="btn modal_feedback_sendfb" type="submit" name="btn_sendfb" value="Отправить">
 				</fieldset>
 			</form>
