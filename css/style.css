@@ -1,0 +1,34 @@
+
+body {
+	font-size: 18px;
+	line-heaght: 22px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Roboto";
+	background-color: #884422;
+}
+
+.promo_icecream h3 {
+	font-size: 60px;
+	line-heaght: 60px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
+.bonus_info h3 {
+	font-size: 35px;
+	line-heaght: 41px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
+.container h1 {
+	font-size: 35px;
+	line-heaght: 41px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
