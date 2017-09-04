@@ -24,7 +24,7 @@ a:active {
 	color: #ffbc9e;
 }
 
-.visually-hidden:not(:focus):not(:active),
+/* .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -40,6 +40,11 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+} */
+
+.visually_hidden,
+.modal {
+	display: none;
 }
 
 .btn {
@@ -62,9 +67,7 @@ input[type="radio"].visually-hidden {
 	width: 1146px;
 	height: 118px;
 	padding: 0;
-	margin-left: 27px;
-	margin-right: 27px;
-	margin-bottom: 529px;
+	margin: 0 auto;
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
@@ -207,30 +210,53 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.promo {
+	width: 1146px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 40px;
 }
 
 .promo_list {
+	width: 1146px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	display: flex;
 }
 
 .promo_item {
-	text-align: center;
+	width: 1146px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .promo_item:nth-child(2) {
 	background-color: #8996a6;
+	display: none;
 }
 
 .promo_item:nth-child(3) {
 	background-color: #9d8b84;
+	display: none;
 }
 
 .promo_item h3 {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
+	text-align: center;
 }
 
 .btn_promo_icecream {
@@ -248,10 +274,8 @@ input[type="radio"].visually-hidden {
 	width: 1146px;
 	height: 230px;
 	margin: 0;
-	margin-left: 27px;
-	margin-right: 27px;
-	margin-bottom: 38px;
 	padding: 0;
+	margin-bottom: 40px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -268,14 +292,14 @@ input[type="radio"].visually-hidden {
 }
 .bonus_info:nth-of-type(1) {
 	background-color: #650917;
-	background-image: url("../img/bonus_raspberry.jpg");
+	background-image: url("../img/bonus_back_raspberry.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
 .bonus_info:nth-of-type(2) {
 	background-color: #3d2418;
-	background-image: url("../img/bonus_choco.jpg");
+	background-image: url("../img/bonus_back_choco.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
@@ -288,11 +312,8 @@ input[type="radio"].visually-hidden {
 
 .catalog {
 	width: 1146px;
-	min-height: 328px;
 	margin: 0;
-	margin-left: 27px;
-	margin-right: 27px;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
@@ -300,7 +321,7 @@ input[type="radio"].visually-hidden {
 
 .catalog_item {
 	width: 267px;
-	height: 328px;
+	min-height: 328px;
 	margin: 0;
 	padding: 0;
 }
@@ -309,11 +330,14 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 }
 
+.catalog_item h3 {
+	text-align: center;
+}
+
 .catalog_link {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-	text-align: center;
 }
 
 .catalog_item p {
@@ -339,25 +363,57 @@ input[type="radio"].visually-hidden {
 	font-weight: 500;
 	color: #323232;
 
-	width: 1106px;
-	height: 266px;
+	width: 1092px;
+	min-height: 266px;
 	margin: 0;
-	margin-left: 27px;
-	margin-right: 27px;
 	margin-bottom: 40px;
-	padding: 20px;
+	padding: 20px 27px;
 	display: flex;
+	flex-direction: column;
+}
+
+.features_about_store {
+	width: 1092px;
+	min-height: 60px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 7px;
 }
 
 .features_list {
+	width: 1092px;
+	min-height: 190px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	margin-bottom: 7px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 }
 
 .features_item {
+	width: 540px;
+	min-height: 95px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 	color: #323232;
+}
+
+.news_wrapper {
+	width: 1146px;
+	height: 220px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .last_news {
@@ -365,6 +421,13 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/strawberries_back.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
+
+	width: 510px;
+	min-height: 180px;
+	margin: 0;
+	padding: 20px 25px;
+	display: flex;
+	flex-direction: column;
 }
 
 .last_news h3 {
@@ -372,6 +435,10 @@ input[type="radio"].visually-hidden {
 	line-height: 22px;
 	font-weight: 500;
 	color: #323232;
+	width: 280px;
+	min-height: 30px;
+	margin: 0;
+	padding: 0;
 }
 
 .news_link {
@@ -380,6 +447,10 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	color: #323232;
 	text-decoration: underline;
+	width: 285px;
+	min-height: 90px;
+	margin: 0;
+	padding: 0;
 }
 
 .subscribe {
@@ -388,6 +459,31 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	color: #5a5a5a;
 	background-color: #f8f7f4;
+	background-image: url("../img/svg_gllacy/bg_post.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+	width: 490px;
+	min-height: 170px;
+	margin: 0;
+	padding: 25px 35px;
+	display: flex;
+	flex-direction: column;
+}
+
+.subscribe_appeal {
+	width: 490px;
+	min-height: 65px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 35px;
+} 
+
+.subscribe_field {
+	width: 490px;
+	min-height: 50px;
+	margin: 0;
+	padding: 0;
 }
 
 .subscribe_field input [type="text"] {
@@ -399,12 +495,27 @@ input[type="radio"].visually-hidden {
 	border: 1px solid #999999;
 }
 
+.contacts {
+	min-width: 1200px;
+	min-height: 430px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .contacts_info {
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
 	color: #323232;
 	background-color: #fffffe;
+
+	width: 252px;
+	height: 243px;
+	margin: 0;
+	padding: 32px 25px 30px;
 }
 
 .contacts_info b {
@@ -416,14 +527,41 @@ input[type="radio"].visually-hidden {
 
 .contacts_phone {
 	font-size: 18px;
-	line-height: 1.222;
+	line-height: 22px;
 	font-weight: 700;
 	color: #323232;
+}
+
+.footer {
+	width: 1146px;
+	height: 104px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .social_menu,
 .documents_menu {
 	list-style: none;
+}
+
+.social_menu {
+	width: 250px;
+	min-height: 42px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.documents_menu {
+	width: 340px;
+	min-height: 42px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .documents_item a {
@@ -443,6 +581,11 @@ input[type="radio"].visually-hidden {
 	line-height: 1.500;
 	font-weight: 400;
 	color: #ffffff;
+
+	width: 190px;
+	min-height: 64px;
+	margin: 0;
+	padding: 0;
 }
 
 .copyright a {
