@@ -1,13 +1,15 @@
 
 body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 1.375;
-	color: #ffffff;
+	line-height: 22px;
 	font-weight: 500;
+	color: #ffffff;
+	
 	background-color: #849d8f;
 }
 
@@ -22,17 +24,28 @@ a:active {
 	color: #ffbc9e;
 }
 
-.visually_hidden {
-	font-size: 11px;
-	line-height: 1;
-	color: #ddaa22;
-	text-decoration: inherit;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
 	font: inherit;
 	font-size: 18px;
-	line-height: 1.333;
+	line-height: 24px;
 	color: #ffffff;
 	font-weight: 700;
 	background-color: #eb583c;
@@ -45,10 +58,91 @@ a:active {
 	background-color: #f07a63;
 }
 
+.header {
+	width: 1146px;
+	height: 118px;
+	padding: 0;
+	margin-left: 27px;
+	margin-right: 27px;
+	margin-bottom: 529px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+}
+
 .header_nav {
+	width: 1146px;
+	height: 64px;
+	margin: 0;
+	margin-top: 9px;
+	padding: 0;
 	font-size: 14px;
-	line-height: 1.143;
+	line-height: 16px;
 	font-weight: 700;
+	display: flex;
+}
+
+.header_working_time {
+	width: 267px;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	text-align: right;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.menu_site_logo {
+	width: 154px;
+	heigh: 64px;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+}
+
+.menu_site_list {
+	width: 580px;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.menu_site_item a,
+.menu_user_item a {
+	display: block;
+	vertical-align: center;
+}
+
+.menu_site_item a {
+	padding-top: 7px;
+	padding-right: 13px;
+	padding-bottom: 7px;
+	padding-left: 14px;
+}
+
+.menu_user_list {
+	width: 293px;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.menu_user_item a {
+	padding-top: 7px;
+	padding-right: 16px;
+	padding-bottom: 7px;
+	padding-left: 16px;
 }
 
 .menu_site_list,
@@ -59,18 +153,18 @@ a:active {
 
 .menu_site_list {
 	font-size: 16px;
-	line-height: 1.125;
+	line-height: 20px;
 }
 
 .menu_catalog_list a {
 	font-size: 14px;
-	line-height: 1.143;
+	line-height: 16px;
 	font-weight: 400;
 }
 
 .menu_catalog_list b {
 	font-size: 14px;
-	line-height: 1.143;
+	line-height: 16px;
 	font-weight: 700;
 }
 
@@ -80,7 +174,7 @@ a:active {
 
 .phone {
 	font-size: 22px;
-	line-height: 1.091;
+	line-height: 24px;
 	font-weight: 700;
 }
 
@@ -112,6 +206,11 @@ a:active {
 	color: #323232;
 }
 
+.container {
+	margin: 0;
+	padding: 0;
+}
+
 .promo_list {
 	list-style: none;
 }
@@ -130,13 +229,13 @@ a:active {
 
 .promo_item h3 {
 	font-size: 60px;
-	line-height: 1;
+	line-height: 60px;
 	font-weight: 700;
 }
 
 .btn_promo_icecream {
 	font-size: 32px;
-	line-height: 1.375;
+	line-height: 44px;
 	font-weight: 700;
 }
 
@@ -145,9 +244,25 @@ a:active {
 	color: #323232;
 }
 
+.bonus {
+	width: 1146px;
+	height: 230px;
+	margin: 0;
+	margin-left: 27px;
+	margin-right: 27px;
+	margin-bottom: 38px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
 .bonus_info {
+	width: 520px;
+	height: 190px;
+	margin: 0;
+	padding: 20px;
 	font-size: 18px;
-	line-height: 1.222;
+	line-height: 22px;
 	font-weight: 700;
 	text-align: left;
 }
@@ -167,8 +282,27 @@ a:active {
 
 .bonus_info h3 {
 	font-size: 35px;
-	line-height: 1.171;
+	line-height: 41px;
 	font-weight: 700;
+}
+
+.catalog {
+	width: 1146px;
+	min-height: 328px;
+	margin: 0;
+	margin-left: 27px;
+	margin-right: 27px;
+	margin-bottom: 35px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog_item {
+	width: 267px;
+	height: 328px;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog_item img{
@@ -177,21 +311,21 @@ a:active {
 
 .catalog_link {
 	font-size: 16px;
-	line-height: 1.375;
+	line-height: 22px;
 	font-weight: 500;
 	text-align: center;
 }
 
 .catalog_item p {
 	font-size: 30px;
-	line-height: 1.5;
+	line-height: 45px;
 	font-weight: 700;
 	text-align: left;
 }
 
 .catalog_price {
 	font-size: 45px;
-	line-height: 1;
+	line-height: 45px;
 	font-weight: 700;
 }
 
@@ -201,9 +335,18 @@ a:active {
 	background-position: 0 0;
 	background-repeat: repeat;
 	font-size: 24px;
-	line-height: 1.250;
+	line-height: 30px;
 	font-weight: 500;
 	color: #323232;
+
+	width: 1106px;
+	height: 266px;
+	margin: 0;
+	margin-left: 27px;
+	margin-right: 27px;
+	margin-bottom: 40px;
+	padding: 20px;
+	display: flex;
 }
 
 .features_list {
@@ -212,7 +355,7 @@ a:active {
 
 .features_item {
 	font-size: 16px;
-	line-height: 1.375;
+	line-height: 22px;
 	font-weight: 400;
 	color: #323232;
 }
@@ -226,14 +369,14 @@ a:active {
 
 .last_news h3 {
 	font-size: 16px;
-	line-height: 1.375;
+	line-height: 22px;
 	font-weight: 500;
 	color: #323232;
 }
 
 .news_link {
 	font-size: 24px;
-	line-height: 1.250;
+	line-height: 30px;
 	font-weight: 700;
 	color: #323232;
 	text-decoration: underline;
@@ -241,7 +384,7 @@ a:active {
 
 .subscribe {
 	font-size: 16px;
-	line-height: 1.375;
+	line-height: 22px;
 	font-weight: 400;
 	color: #5a5a5a;
 	background-color: #f8f7f4;
@@ -249,7 +392,7 @@ a:active {
 
 .subscribe_field input [type="text"] {
 	font-size: 16px;
-	line-height: 1.500;
+	line-height: 24px;
 	font-weight: 400;
 	color: #999999;
 	background-color: #ffffff;
@@ -258,7 +401,7 @@ a:active {
 
 .contacts_info {
 	font-size: 14px;
-	line-height: 1.429;
+	line-height: 20px;
 	font-weight: 400;
 	color: #323232;
 	background-color: #fffffe;
@@ -266,7 +409,7 @@ a:active {
 
 .contacts_info b {
 	font-size: 18px;
-	line-height: 1.333;
+	line-height: 24px;
 	font-weight: 700;
 	color: #323232;
 }
